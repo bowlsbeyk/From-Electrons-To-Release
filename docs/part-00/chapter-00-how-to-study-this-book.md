@@ -22,7 +22,7 @@ There is no previous chapter to pick up from. What this chapter leaves for the n
 
 ### The technician who could fix anything
 
-Let me tell you about a kind of person I have worked alongside for most of my career, and have been.
+Let me tell you about a kind of person you find in every service shop, and that I have been.
 
 A good field technician walks up to a machine that is down, listens for about a minute, looks at two readings, and says what is wrong. Ninety seconds. He is usually right. Now put a trainee next to him and ask him to explain why he knew. He will say something like "it just sounded like the supply." Push him: what about the sound? What would it have sounded like if it were the other thing? He gets vague. Not because he is hiding anything. Because the knowledge is real, and it is not in words. It is in pattern. He has seen four hundred supplies fail and his brain has quietly built a detector, and the detector does not come with a printout.
 
@@ -62,7 +62,7 @@ Five years later, Karpicke and Janell Blunt pushed it further.[^3] They compared
 
 This result has been checked many times since. A *meta-analysis* is a study that pools the results of many earlier studies to see what they say together, and there have been several. One from 2014 pooled 61 laboratory studies and found a medium-sized advantage for testing over restudy, about half a standard deviation, growing to about 0.7 when the final test was a day or more away.[^4] (A standard deviation is a unit for how spread out a set of scores is; an effect of half of one is statisticians' way of saying "clearly there, not enormous.") A 2021 meta-analysis of 222 studies in real classrooms, nearly fifty thousand students, found the same medium effect, and found it held across subjects and ages.[^5] In 2013 a panel of five researchers reviewed ten popular study techniques for the Association for Psychological Science and rated two of them "high utility": practice testing and spreading study out over time. They rated rereading and highlighting "low."[^6] Not harmful; just unreliable.
 
-A caution, because I promised not to oversell anything in this book. Retrieval practice is not magic. The effect is medium, not enormous. In the short term (minutes) rereading actually wins, which is exactly why it fools people. The meta-analysis found that if you test yourself without feedback and can only recall half the material, the benefit mostly disappears; you need to succeed often enough, or check the answer afterward, for the practice to build anything.[^4] And the studies disagree about which *kind* of test is best, so I am not going to tell you that one format beats the rest. What they agree on is the shape: closing the book and producing the material beats looking at it again, and the gap widens with time.
+A caution, because this book is not going to oversell anything. Retrieval practice is not magic. The effect is medium, not enormous. In the short term (minutes) rereading actually wins, which is exactly why it fools people. The meta-analysis found that if you test yourself without feedback and can only recall half the material, the benefit mostly disappears; you need to succeed often enough, or check the answer afterward, for the practice to build anything.[^4] And the studies disagree about which *kind* of test is best, so I am not going to tell you that one format beats the rest. What they agree on is the shape: closing the book and producing the material beats looking at it again, and the gap widens with time.
 
 ### Why it has to be uncomfortable
 
@@ -96,7 +96,7 @@ That is what a flashcard scheduler does. It tracks, for every card, roughly when
 
 *Figure 0.3 — What a scheduler does for you. The grey curve is a fact learned once and left alone. The blue curve is the same fact reviewed each time its chance of recall dips to about 90%. Each successful review resets it and makes the next decline slower, so the reviews land at roughly one, four, ten, and twenty-eight days. This is the shape of the FSRS model, not measured data; your cards will have their own curves.*
 
-The scheduler this book recommends is called FSRS, the Free Spaced Repetition Scheduler. It is open source, it is built into the most widely used flashcard program, Anki, and its model is simple enough to explain in a paragraph, which is the kind of tool I like.[^15]
+The scheduler this book recommends is called FSRS, the Free Spaced Repetition Scheduler. It is open source, it is built into the most widely used flashcard program, Anki, and its model is simple enough to explain in a paragraph.[^15]
 
 FSRS describes each card with three numbers. **Retrievability** is the chance you could recall the card right now; it falls every day you don't review. **Stability** is how many days it takes for retrievability to fall from 100% to 90%; a card with a stability of 365 will still be at 90% a year from now. **Difficulty** is how hard the card is for you, which governs how much stability grows after each successful review. When you review a card and grade yourself, the scheduler updates stability and difficulty; then it computes the next day on which retrievability will hit your target. The default target is 90%, which the Anki manual notes is about where the workload is reasonable; push it toward 97% and the number of reviews climbs fast.[^16] The parameters behind the model were fit to several hundred million real reviews from about ten thousand Anki users,[^15] and the method descends from a 2022 paper that treated scheduling as a route-finding problem: of all the possible sequences of reviews, find the one that gets a memory to the target strength at the lowest total cost in your time.[^17]
 
@@ -204,7 +204,7 @@ You need **Python 3**, version 3.12 or newer. It is the language the book's code
 
 Let me run one idea through the whole loop so you can see it done before you do it. The idea is this chapter's own: *retrieval beats rereading, and the feeling of knowing can't tell the difference.*
 
-**Read.** You just did. Along the way you should have written a few questions in the margin rather than answers. Mine, the first time I understood this: *if the rereaders predicted they'd do best, what was their prediction based on?* (Answer, from the chapter: on fluency, which is exactly the thing that doesn't predict.)
+**Read.** You just did. Along the way you should have written a few questions in the margin rather than answers. One a first reader of this chapter might write: *if the rereaders predicted they'd do best, what was their prediction based on?* (Answer, from the chapter: on fluency, which is exactly the thing that doesn't predict.)
 
 **Lab.** The lab below has you close this chapter and write down everything you remember, then compare. That is retrieval practice on retrieval practice, which is either elegant or annoying depending on your mood.
 
@@ -216,7 +216,7 @@ That has the mechanism (fluency isn't memory), the fix (retrieve), the evidence 
 
 **Cards.** Three, from the examples above: the 56% vs 42% cloze, the *why does rereading feel like it works* card, and one more: *Front: In FSRS, "stability" is the number of days until the chance of recall falls to ____%. Back: 90.* Notice that last one is a number I could easily misremember as 50%, which is why it earns a card.
 
-**Journal.** Four prompts. Mine from the day this chapter came together: *Did: read the retrieval and spacing papers. Hard: I kept wanting to believe the "70% in a day" curve and had to go read what Ebbinghaus actually measured. Clicked: "at test, the answer is exactly the thing that is missing." Predict: Chapter 1's physics will feel easy and I'll be tempted to skip the lab; don't.*
+**Journal.** Four prompts. An example entry, the kind a first reader might write: *Did: read Chapter 0 and the two main studies it leans on. Hard: I kept wanting to believe the "70% in a day" curve and had to go read what Ebbinghaus actually measured. Clicked: "at test, the answer is exactly the thing that is missing." Predict: Chapter 1's physics will feel easy and I'll be tempted to skip the lab; don't.*
 
 **Review.** The three cards will come back tomorrow, then in a few days, then in a couple of weeks. Each time, say the answer before you flip. Grade honestly: "I knew it instantly" and "I got it after a struggle" are different grades, and the scheduler needs the difference.
 
