@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <title>Recognition versus recall</title>
+  <desc>Two panels side by side. On the left, "Rereading": an open page flows into an eye, then into a thought bubble that says "I know this," with a note that the feeling comes from how smoothly the page reads. On the right, "Retrieval": a closed book, then a blank page with a question mark, then effort, then an answer written down, with a note that the answer either comes out or it does not, and either way you now know which. A bar at the bottom says the feeling on the left is a poor guide to what you will remember next week; the result on the right is a good one.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1F2937"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="420" fill="#FFFFFF"/>
+
+  <!-- Left panel: rereading -->
+  <g id="panel-reread">
+    <rect x="24" y="24" width="440" height="312" rx="6" fill="#6B7280" fill-opacity="0.04" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="40" y="52" font-size="14" font-weight="600" fill="#1F2937">Rereading</text>
+    <text x="40" y="70" font-size="11" fill="#6B7280">what most of us call "studying"</text>
+
+    <!-- open page -->
+    <rect x="48" y="112" width="96" height="120" rx="4" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+    <line x1="60" y1="132" x2="132" y2="132" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="60" y1="148" x2="132" y2="148" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="60" y1="164" x2="120" y2="164" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="60" y1="180" x2="132" y2="180" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="60" y1="196" x2="112" y2="196" stroke="#E5E7EB" stroke-width="2"/>
+    <line x1="60" y1="212" x2="128" y2="212" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="96" y="252" font-size="11" text-anchor="middle" fill="#6B7280">the page, again</text>
+
+    <line x1="152" y1="172" x2="200" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- eye -->
+    <path d="M208,172 C232,140 280,140 304,172 C280,204 232,204 208,172 z" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+    <circle cx="256" cy="172" r="12" fill="#1F2937"/>
+    <text x="256" y="252" font-size="11" text-anchor="middle" fill="#6B7280">reads smoothly</text>
+
+    <line x1="312" y1="172" x2="352" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- thought bubble -->
+    <ellipse cx="408" cy="164" rx="44" ry="30" fill="#FACC15" fill-opacity="0.25" stroke="#1F2937" stroke-width="1.5"/>
+    <circle cx="372" cy="200" r="5" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+    <circle cx="362" cy="212" r="3" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+    <text x="408" y="161" font-size="11" text-anchor="middle" fill="#1F2937">"I know</text>
+    <text x="408" y="175" font-size="11" text-anchor="middle" fill="#1F2937">this."</text>
+    <text x="408" y="252" font-size="11" text-anchor="middle" fill="#6B7280">a feeling</text>
+
+    <text x="40" y="292" font-size="11" fill="#1F2937">The feeling is real. It is a report on how</text>
+    <text x="40" y="308" font-size="11" fill="#1F2937">easily the page went by, not on what you</text>
+    <text x="40" y="324" font-size="11" fill="#1F2937">will be able to produce next week.</text>
+  </g>
+
+  <!-- Right panel: retrieval -->
+  <g id="panel-retrieve">
+    <rect x="496" y="24" width="440" height="312" rx="6" fill="#2563EB" fill-opacity="0.04" stroke="#2563EB" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="512" y="52" font-size="14" font-weight="600" fill="#1F2937">Retrieval</text>
+    <text x="512" y="70" font-size="11" fill="#6B7280">closing the book and producing it yourself</text>
+
+    <!-- closed book -->
+    <rect x="520" y="124" width="72" height="96" rx="4" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+    <line x1="532" y1="124" x2="532" y2="220" stroke="#1F2937" stroke-width="1.5"/>
+    <text x="556" y="252" font-size="11" text-anchor="middle" fill="#6B7280">book closed</text>
+
+    <line x1="600" y1="172" x2="632" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- blank page with ? -->
+    <rect x="640" y="112" width="96" height="120" rx="4" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <text x="688" y="184" font-size="40" font-weight="600" text-anchor="middle" fill="#2563EB">?</text>
+    <text x="688" y="252" font-size="11" text-anchor="middle" fill="#6B7280">the effort</text>
+
+    <line x1="744" y1="172" x2="776" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- answer written -->
+    <rect x="784" y="112" width="120" height="120" rx="4" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+    <line x1="796" y1="136" x2="892" y2="136" stroke="#2563EB" stroke-width="2"/>
+    <line x1="796" y1="152" x2="880" y2="152" stroke="#2563EB" stroke-width="2"/>
+    <line x1="796" y1="168" x2="892" y2="168" stroke="#2563EB" stroke-width="2"/>
+    <line x1="796" y1="184" x2="860" y2="184" stroke="#DC2626" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="844" y="212" font-size="11" text-anchor="middle" fill="#6B7280">three lines, one gap</text>
+    <text x="844" y="252" font-size="11" text-anchor="middle" fill="#6B7280">a result</text>
+
+    <text x="512" y="292" font-size="11" fill="#1F2937">Either it comes out or it does not. Either</text>
+    <text x="512" y="308" font-size="11" fill="#1F2937">way you now know exactly where the gap is,</text>
+    <text x="512" y="324" font-size="11" fill="#1F2937">and the act of pulling it out strengthened it.</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="24" y="356" width="912" height="40" rx="4" fill="#FACC15" fill-opacity="0.18" stroke="#FACC15" stroke-width="1.5"/>
+  <text x="480" y="381" font-size="12" text-anchor="middle" fill="#1F2937">Left: a feeling that tracks fluency.  Right: a measurement that tracks memory.  Only one of them predicts next week.</text>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <title>The loop you run for every chapter</title>
+  <desc>Six numbered steps arranged left to right in two rows, connected by arrows: 1 Read the chapter, 2 Do the lab with no AI open, 3 Explain it back out loud, 4 Answer the interview questions, 5 Make your cards and write your journal entry, 6 Review the cards on the days the scheduler picks. A shaded region around steps 2 through 4 is labeled "assistant closed"; a note at step 5 marks where the assistant may come back in to review your lab and push further. A dotted arrow loops from step 6 back toward later chapters, and a time ruler underneath shows about 30 minutes for reading, about 60 for the lab, about 20 for steps 3 to 5, and a few minutes a day for reviews.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1F2937"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="560" fill="#FFFFFF"/>
+  <text x="24" y="36" font-size="20" font-weight="600" fill="#1F2937">One chapter, start to finish</text>
+  <text x="24" y="56" font-size="11" fill="#6B7280">The reading is the smallest part. The parts that make it stick are the ones you do with the book closed.</text>
+
+  <!-- assistant-closed region (behind boxes) -->
+  <rect x="264" y="88" width="664" height="152" rx="8" fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="596" y="110" font-size="11" font-weight="600" text-anchor="middle" fill="#DC2626">ASSISTANT CLOSED · no chat window, no autocomplete that writes lines</text>
+
+  <!-- Row 1: steps 1-4 -->
+  <g id="step-1">
+    <rect x="40" y="128" width="200" height="88" rx="4" fill="#2563EB" fill-opacity="0.12" stroke="#2563EB" stroke-width="1.5"/>
+    <circle cx="56" cy="144" r="8" fill="#2563EB"/>
+    <text x="56" y="148" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">1</text>
+    <text x="72" y="148" font-size="12" font-weight="600" fill="#1F2937">Read the chapter</text>
+    <text x="72" y="168" font-size="11" fill="#1F2937">Slowly. Stop at every figure.</text>
+    <text x="72" y="184" font-size="11" fill="#1F2937">Write questions in the margin,</text>
+    <text x="72" y="200" font-size="11" fill="#1F2937">not answers.</text>
+  </g>
+  <line x1="248" y1="172" x2="280" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g id="step-2">
+    <rect x="288" y="128" width="200" height="88" rx="4" fill="#16A34A" fill-opacity="0.12" stroke="#16A34A" stroke-width="3"/>
+    <circle cx="304" cy="144" r="8" fill="#16A34A"/>
+    <text x="304" y="148" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">2</text>
+    <text x="320" y="148" font-size="12" font-weight="600" fill="#1F2937">Do the lab</text>
+    <text x="320" y="168" font-size="11" fill="#1F2937">Build the small thing yourself.</text>
+    <text x="320" y="184" font-size="11" fill="#1F2937">Manuals and search are fine.</text>
+    <text x="320" y="200" font-size="11" fill="#1F2937">Getting stuck is the point.</text>
+  </g>
+  <line x1="496" y1="172" x2="528" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g id="step-3">
+    <rect x="536" y="128" width="176" height="88" rx="4" fill="#65A30D" fill-opacity="0.12" stroke="#65A30D" stroke-width="1.5"/>
+    <circle cx="552" cy="144" r="8" fill="#65A30D"/>
+    <text x="552" y="148" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">3</text>
+    <text x="568" y="148" font-size="12" font-weight="600" fill="#1F2937">Explain it back</text>
+    <text x="568" y="168" font-size="11" fill="#1F2937">Out loud, book closed, to a</text>
+    <text x="568" y="184" font-size="11" fill="#1F2937">real or imagined listener.</text>
+    <text x="568" y="200" font-size="11" fill="#1F2937">Notice where you stall.</text>
+  </g>
+  <line x1="720" y1="172" x2="752" y2="172" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g id="step-4">
+    <rect x="760" y="128" width="160" height="88" rx="4" fill="#4F46E5" fill-opacity="0.12" stroke="#4F46E5" stroke-width="1.5"/>
+    <circle cx="776" cy="144" r="8" fill="#4F46E5"/>
+    <text x="776" y="148" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">4</text>
+    <text x="792" y="148" font-size="12" font-weight="600" fill="#1F2937">Take the questions</text>
+    <text x="792" y="168" font-size="11" fill="#1F2937">Answer each one out</text>
+    <text x="792" y="184" font-size="11" fill="#1F2937">loud before reading</text>
+    <text x="792" y="200" font-size="11" fill="#1F2937">the model answer.</text>
+  </g>
+
+  <!-- down arrow to row 2 -->
+  <path d="M840,216 L840,272" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+
+  <!-- Row 2: steps 5, 6 (right to left) -->
+  <g id="step-5">
+    <rect x="640" y="280" width="280" height="104" rx="4" fill="#D97706" fill-opacity="0.12" stroke="#D97706" stroke-width="1.5"/>
+    <circle cx="656" cy="296" r="8" fill="#D97706"/>
+    <text x="656" y="300" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">5</text>
+    <text x="672" y="300" font-size="12" font-weight="600" fill="#1F2937">Cards, journal, glossary</text>
+    <text x="672" y="320" font-size="11" fill="#1F2937">Five to fifteen cards, one fact each.</text>
+    <text x="672" y="336" font-size="11" fill="#1F2937">A journal entry: what was hard, what</text>
+    <text x="672" y="352" font-size="11" fill="#1F2937">unlocked it. New terms in your glossary,</text>
+    <text x="672" y="368" font-size="11" fill="#1F2937">in your own words.</text>
+  </g>
+  <!-- assistant may return marker -->
+  <g id="assistant-returns">
+    <rect x="640" y="396" width="280" height="36" rx="4" fill="#FACC15" fill-opacity="0.25" stroke="#FACC15" stroke-width="1.5"/>
+    <text x="780" y="411" font-size="11" font-weight="600" text-anchor="middle" fill="#1F2937">Assistant may come back in here</text>
+    <text x="780" y="425" font-size="11" text-anchor="middle" fill="#1F2937">to review your lab, quiz you, and go further</text>
+  </g>
+
+  <line x1="632" y1="332" x2="600" y2="332" stroke="#1F2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g id="step-6">
+    <rect x="360" y="280" width="232" height="104" rx="4" fill="#0891B2" fill-opacity="0.12" stroke="#0891B2" stroke-width="1.5"/>
+    <circle cx="376" cy="296" r="8" fill="#0891B2"/>
+    <text x="376" y="300" font-size="11" font-weight="600" text-anchor="middle" fill="#FFFFFF">6</text>
+    <text x="392" y="300" font-size="12" font-weight="600" fill="#1F2937">Review when scheduled</text>
+    <text x="392" y="320" font-size="11" fill="#1F2937">A few minutes a day. The scheduler</text>
+    <text x="392" y="336" font-size="11" fill="#1F2937">picks the days; you just show up.</text>
+    <text x="392" y="352" font-size="11" fill="#1F2937">Say the answer before you flip.</text>
+    <text x="392" y="368" font-size="11" fill="#1F2937">Grade yourself honestly.</text>
+  </g>
+
+  <!-- loop back to next chapter -->
+  <path d="M352,332 L120,332 L120,228" stroke="#6B7280" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" fill="none" marker-end="url(#arrow-muted)"/>
+  <text x="128" y="300" font-size="11" fill="#6B7280">next chapter,</text>
+  <text x="128" y="314" font-size="11" fill="#6B7280">reviews continue</text>
+
+  <!-- Time ruler -->
+  <g id="ruler">
+    <line x1="40" y1="480" x2="920" y2="480" stroke="#1F2937" stroke-width="1.5"/>
+    <text x="24" y="464" font-size="11" font-weight="600" fill="#1F2937">About how long each part takes</text>
+    <rect x="40" y="472" width="160" height="16" fill="#2563EB" fill-opacity="0.35"/>
+    <text x="120" y="508" font-size="11" text-anchor="middle" fill="#1F2937">read · ~30 min</text>
+    <rect x="200" y="472" width="320" height="16" fill="#16A34A" fill-opacity="0.35"/>
+    <text x="360" y="508" font-size="11" text-anchor="middle" fill="#1F2937">lab · ~60 min</text>
+    <rect x="520" y="472" width="112" height="16" fill="#65A30D" fill-opacity="0.35"/>
+    <text x="576" y="508" font-size="11" text-anchor="middle" fill="#1F2937">explain + questions · ~20</text>
+    <rect x="632" y="472" width="64" height="16" fill="#D97706" fill-opacity="0.35"/>
+    <text x="664" y="528" font-size="11" text-anchor="middle" fill="#1F2937">cards · ~10</text>
+    <rect x="696" y="472" width="224" height="16" fill="#0891B2" fill-opacity="0.35"/>
+    <text x="808" y="508" font-size="11" text-anchor="middle" fill="#1F2937">reviews · minutes a day, for weeks</text>
+  </g>
+</svg>

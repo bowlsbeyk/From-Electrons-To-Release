@@ -1,0 +1,25 @@
+[book]
+title = "From Electrons to Releases"
+authors = ["Kyle Bowlsbey"]
+description = "A textbook from the electron to the signed release — hardware, wires, assembly, operating systems, software, data, networks, trust, shipping, and the AI on top of it all."
+language = "en"
+src = "docs"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/bowlsbeyk/From-Electrons-To-Release"
+edit-url-template = "https://github.com/bowlsbeyk/From-Electrons-To-Release/edit/main/docs/{path}"
+additional-css = ["docs/book.css"]
+no-section-label = true
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.search]
+limit-results = 20
