@@ -106,11 +106,9 @@ Written one chapter at a time, in order. ✅ merged · 🚧 in progress · — n
 | **Part 12 — Landing it** | | |
 | 72 | The interview itself | — |
 
-The full plan, with what each chapter covers, is in [docs/PLAN.md](docs/PLAN.md).
-
 ## How it's made
 
-The chapters are drafted with Claude and reviewed, tested, and merged by me. The rules that keep seventy-three chapters sounding like one book are public: [docs/STANDARDS.md](docs/STANDARDS.md) (how a chapter is written), [docs/DESIGN.md](docs/DESIGN.md) (how the book is assembled), and [CLAUDE.md](CLAUDE.md) (the operating manual for the drafting sessions). Every chapter's sources are listed at its end and collected in [docs/BIBLIOGRAPHY.md](docs/BIBLIOGRAPHY.md). Every example, figure, and dataset is original.
+The chapters are drafted with Claude and reviewed, tested, and merged by me. Every term the book defines is in [docs/GLOSSARY.md](docs/GLOSSARY.md), with the chapter that defined it. Every chapter's sources are listed at its end and collected in [docs/BIBLIOGRAPHY.md](docs/BIBLIOGRAPHY.md). Every example, figure, and dataset is original.
 
 If something is wrong, or a chapter lost you, [open an issue](../../issues). Getting lost is a bug in the chapter, not in you. See [CONTRIBUTING.md](CONTRIBUTING.md).
 

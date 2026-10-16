@@ -11,16 +11,16 @@ Thank you for reading closely enough to want to fix something.
 
 ## What's not in scope
 
-- Rewriting a chapter's voice or structure. The book has one voice on purpose; see `docs/STANDARDS.md`.
-- Adding chapters or topics. The plan is fixed in `docs/PLAN.md`; propose a change as an issue and expect a conversation.
+- Rewriting a chapter's voice or structure. The book has one voice on purpose.
+- Adding chapters or topics. The plan is fixed (see the status table in the README); propose a change as an issue and expect a conversation.
 - Anything that isn't original. No copied text, traced figures, or code lifted from elsewhere.
 
 ## How to submit
 
 1. Fork, branch from `main`, make the change.
 2. For a chapter change, keep to the chapter's existing structure and vocabulary (`docs/GLOSSARY.md`). If you add a source, add it to the chapter's Sources and to `docs/BIBLIOGRAPHY.md`.
-3. For a diagram change, follow `docs/diagrams/README.md`.
-4. Open a pull request. The template will ask a few questions; answer the ones that apply.
+3. For a diagram change, match the palette, line weights, and shapes of the figures already in that chapter.
+4. Open a pull request and say, in a few lines, what changed and why.
 
 Kyle reviews and merges. Be patient; this is one person's book and he also has a day job.
 
