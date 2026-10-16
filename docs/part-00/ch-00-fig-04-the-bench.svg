@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <title>Your bench: what you need before Chapter 1</title>
+  <desc>A simple inventory. On the left, three tools drawn as boxes: Python 3.12 or newer, Git, and a flashcard scheduler running FSRS (Anki, or your own). On the right, a folder named electrons-study containing three files: journal.md, glossary.md, and cards.tsv. A note says the lab script creates the folder and checks the tools.</desc>
+  <rect x="0" y="0" width="960" height="360" fill="#FFFFFF"/>
+  <text x="24" y="36" font-size="20" font-weight="600" fill="#1F2937">The bench</text>
+  <text x="24" y="56" font-size="11" fill="#6B7280">Three tools and one folder. The lab script checks the tools and makes the folder.</text>
+
+  <!-- Tools -->
+  <text x="24" y="96" font-size="14" font-weight="600" fill="#1F2937">Tools</text>
+  <g id="tool-python">
+    <rect x="24" y="108" width="400" height="48" rx="4" fill="#65A30D" fill-opacity="0.12" stroke="#65A30D" stroke-width="1.5"/>
+    <text x="40" y="128" font-size="12" font-weight="600" fill="#1F2937">Python 3.12 or newer</text>
+    <text x="40" y="146" font-size="11" fill="#6B7280">the book's anchor language; runs every lab script</text>
+  </g>
+  <g id="tool-git">
+    <rect x="24" y="168" width="400" height="48" rx="4" fill="#4F46E5" fill-opacity="0.12" stroke="#4F46E5" stroke-width="1.5"/>
+    <text x="40" y="188" font-size="12" font-weight="600" fill="#1F2937">Git</text>
+    <text x="40" y="206" font-size="11" fill="#6B7280">to get the book's code and, later, to keep your own</text>
+  </g>
+  <g id="tool-scheduler">
+    <rect x="24" y="228" width="400" height="48" rx="4" fill="#0891B2" fill-opacity="0.12" stroke="#0891B2" stroke-width="1.5"/>
+    <text x="40" y="248" font-size="12" font-weight="600" fill="#1F2937">A flashcard scheduler (FSRS)</text>
+    <text x="40" y="266" font-size="11" fill="#6B7280">Anki with FSRS turned on, or your own FSRS app</text>
+  </g>
+  <text x="24" y="304" font-size="11" fill="#6B7280">Plus any text editor you already like.</text>
+
+  <!-- Folder -->
+  <text x="464" y="96" font-size="14" font-weight="600" fill="#1F2937">One folder, three files</text>
+  <g id="folder">
+    <path d="M464,116 L464,108 L520,108 L532,120 L936,120 L936,284 L464,284 z" fill="#D97706" fill-opacity="0.08" stroke="#D97706" stroke-width="1.5"/>
+    <text x="480" y="140" font-size="12" font-weight="600" fill="#1F2937" font-family="SFMono-Regular, Menlo, Consolas, monospace">electrons-study/</text>
+    <g id="file-journal">
+      <rect x="496" y="156" width="416" height="32" rx="4" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+      <text x="508" y="170" font-size="11" fill="#1F2937" font-family="SFMono-Regular, Menlo, Consolas, monospace">journal.md</text>
+      <text x="508" y="182" font-size="11" fill="#6B7280">one entry per session, four prompts</text>
+    </g>
+    <g id="file-glossary">
+      <rect x="496" y="196" width="416" height="32" rx="4" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+      <text x="508" y="210" font-size="11" fill="#1F2937" font-family="SFMono-Regular, Menlo, Consolas, monospace">glossary.md</text>
+      <text x="508" y="222" font-size="11" fill="#6B7280">every term, in your words, with its chapter</text>
+    </g>
+    <g id="file-cards">
+      <rect x="496" y="236" width="416" height="32" rx="4" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.5"/>
+      <text x="508" y="250" font-size="11" fill="#1F2937" font-family="SFMono-Regular, Menlo, Consolas, monospace">cards.tsv</text>
+      <text x="508" y="262" font-size="11" fill="#6B7280">tab-separated; import into the scheduler</text>
+    </g>
+  </g>
+  <text x="464" y="304" font-size="11" fill="#6B7280">Keep it somewhere you'll see it every day.</text>
+
+  <!-- Note -->
+  <rect x="24" y="320" width="912" height="24" rx="4" fill="#FACC15" fill-opacity="0.18" stroke="#FACC15" stroke-width="1.5"/>
+  <text x="480" y="336" font-size="11" text-anchor="middle" fill="#1F2937">bench_check.py checks the left side and creates the right side. Run it before you do anything else.</text>
+</svg>

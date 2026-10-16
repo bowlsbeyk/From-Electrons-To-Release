@@ -20,7 +20,7 @@ Written one chapter at a time, in order. ✅ merged · 🚧 in progress · — n
 
 | # | Chapter | Status |
 | --- | --- | --- |
-| 0 | How to study this book | — |
+| 0 | How to study this book | 🚧 |
 | **Part 1 — Physics to logic** | | |
 | 1 | The electron and the switch | — |
 | 2 | Gates and truth | — |
