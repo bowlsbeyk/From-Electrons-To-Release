@@ -1,6 +1,6 @@
 # Chapter 0 — How to study this book
 
-**Before Part 1** · Reading time: about 30 minutes · Lab: about 1 hour · You'll need: a computer with Python 3 and Git (the lab checks for them and tells you where to get them), and about ten minutes a day afterward
+**Before Part 1** · Reading time: about 30 minutes · Lab: about 1 hour · You'll need: a computer (Windows, Mac, or Linux) and an internet connection; the lab walks you through installing Python 3, Git, and a flashcard program, so if you have none of them yet that is fine. Afterward, about ten minutes a day
 
 ## Where we are
 
@@ -198,7 +198,7 @@ These are the three tests from the start of the book with one added. Pass all fo
 
 *Figure 0.4 — Everything you need before Chapter 1. Three tools on the left; one folder with three files on the right. The first lab script checks the tools and creates the folder.*
 
-You need **Python 3**, version 3.12 or newer. It is the language the book's code is written in, and almost every lab script is Python. The current release when I am writing this is 3.15, from October 2026;[^31] anything from 3.12 on will run everything in the book. You need **Git**, which you will use in the next few chapters only to fetch the book's code, and later to keep your own.[^32] You need a **flashcard tool running FSRS**: Anki is free, runs on everything, and is what the lab assumes;[^19] anything else that runs FSRS is fine. And you need a text editor you already like. That is the bench. Everything else, including the hardware kit for Part 1, comes later and is listed in the chapter that first needs it.
+You need **Python 3**, version 3.12 or newer. It is the language the book's code is written in, and almost every lab script is Python. The current release when I am writing this is 3.15, from October 2026;[^31] anything from 3.12 on will run everything in the book. You need **Git**, which you will use in the next few chapters only to fetch the book's code, and later to keep your own.[^32] You need a **flashcard tool running FSRS**: Anki is free, runs on everything, and is what the lab assumes;[^19] anything else that runs FSRS is fine. And you need a text editor you already like. That is the bench. The lab below walks you through installing each of these, step by step, for Windows, Mac, and Linux; you don't need to do anything before you get there. Everything else, including the hardware kit for Part 1, comes later and is listed in the chapter that first needs it.
 
 ## A worked example
 
@@ -228,40 +228,70 @@ That is the whole loop. Thirty minutes of reading, an hour of lab, twenty minute
 
 **What you'll build.** Your study bench: the tools checked, the study folder created, your first ten cards scheduled, your first journal entry written, and one honest measurement of how much of this chapter you can recall with it closed.
 
-**What you'll need.** A computer. The two scripts for this chapter, in `code/` next to this file: `bench_check.py` and `recall_check.py`. An internet connection for the installs. No hardware.
+**What you'll need.** A computer and an internet connection. No hardware. Everything else, including the two scripts this lab uses, you get in the first two steps.
 
-**How long.** About an hour.
+**How long.** About an hour, plus ten or fifteen minutes of installing if you're starting from nothing.
 
 **Steps.**
 
-1. **Check the bench (10 minutes).** Open a terminal. If you have never done that: on Windows, search for *Terminal* or *PowerShell*; on a Mac, *Terminal* is in Applications → Utilities; on Linux you already know. Change into the `code/` folder for this chapter and run:
+1. **Install the tools (10–15 minutes).** Two programs. If you already have them, skip to step 2; the script in step 3 will tell you if a version is too old.
+
+   *Python 3.* Go to https://www.python.org/downloads/ and click the big download button; it offers the current version for your operating system. On **Windows**, run the installer and, on its first screen, tick the box that says **Add python.exe to PATH** before clicking Install. That box is the single most common thing people miss, and without it the command in step 3 won't be found. On a **Mac**, run the `.pkg` installer and click through. On **Linux**, Python 3 is almost certainly installed already; if the version is older than 3.12, install a newer one with your distribution's package manager (on Ubuntu or Debian, `sudo apt install python3`).[^31]
+
+   *Git.* Go to https://git-scm.com/install/ and pick your operating system. On **Windows**, run the installer; the defaults are fine, click Next until it finishes. On a **Mac**, the easiest route is to open Terminal (Applications → Utilities → Terminal), type `git --version`, and press Enter; if Git isn't there, macOS offers to install its command-line tools for you, and you say yes. On **Linux**, `sudo apt install git` (Ubuntu/Debian) or `sudo dnf install git` (Fedora).[^32]
+
+   Close any terminal windows you had open before the installs. A terminal that was already open won't see a program installed after it started.
+
+2. **Get the book's code (5 minutes).** The lab scripts live in the book's repository on GitHub. Two ways to get them; the first needs nothing but a browser.
+
+   *Without Git:* open https://github.com/bowlsbeyk/From-Electrons-To-Release in a browser, click the green **Code** button, choose **Download ZIP**, and unzip it somewhere you'll find again, such as your Documents folder. You'll have a folder named `From-Electrons-To-Release-main`.
+
+   *With Git* (now that you've installed it, this is the better habit, and it's how you'll get updates later): open a terminal, go to the folder where you want the book to live, and run
+
+   ```
+   git clone https://github.com/bowlsbeyk/From-Electrons-To-Release.git
+   ```
+
+   You'll have a folder named `From-Electrons-To-Release`. Later, to pick up new chapters, you'll go into that folder and run `git pull`. What those commands are actually doing is Chapter 56's business; for now they're two spells, and that is allowed.
+
+   Either way, the two scripts for this chapter are inside it at `docs/part-00/code/`.
+
+3. **Check the bench (5 minutes).** Open a terminal. If you have never done that: on Windows, press the Windows key, type *Terminal*, and press Enter (PowerShell is fine too); on a Mac, Terminal is in Applications → Utilities; on Linux you already know. Use `cd` to change into the `docs/part-00/code` folder inside the book folder from step 2, for example:
+
+   ```
+   cd Documents/From-Electrons-To-Release/docs/part-00/code
+   ```
+
+   (Adjust the first part to wherever you put it. If you're not sure, most terminals let you type `cd ` with a space and then drag the folder from a file window onto the terminal to paste its path.) Then run:
 
    ```
    python3 bench_check.py
    ```
 
-   (On Windows it may be `python` or `py` instead of `python3`.) It prints one line for Python and one for Git, marked `ok`, `OLD`, or `MISSING`, then creates a folder called `electrons-study` in your home directory with three files in it. (Pass a different path as an argument if you want it somewhere else; the script prints where it put things.) If Python is missing or older than 3.12, install the current version from python.org and run the script again.[^31] If Git is missing, install it from git-scm.com.[^32] On a Mac, typing `git --version` may offer to install the command-line tools for you; say yes.
+   On Windows the command is usually `python` or `py` instead of `python3`. The script prints one line for Python and one for Git, marked `ok`, `OLD`, or `MISSING`, then creates a folder called `electrons-study` in your home directory with three files in it, and prints where it put them. (Pass a different path as an argument if you want it somewhere else.) If anything is marked `OLD` or `MISSING`, go back to step 1 for that tool, close and reopen the terminal, and run the script again.
 
-2. **Set up the scheduler (20 minutes).** Install Anki from apps.ankiweb.net if you don't have it.[^19] Open it, click the gear next to the default deck, choose *Options*, scroll to the bottom, and turn on **FSRS**. Leave *Desired retention* at 0.90. Save. Then, in the `electrons-study` folder the script made, open `cards.tsv` in your text editor. It already has four header lines; leave them alone. Below them, add ten cards from this chapter, one per line, in the form *front, tab, back, tab, ch00*. Write them in your own words following the four rules above: things you understand, one fact each, clozes where they fit, no lists. When you have ten, in Anki choose *File → Import*, pick `cards.tsv`, and confirm the preview shows ten notes with the fields in the right places. (If you use a different FSRS tool, import the file there instead; it is plain tab-separated text.)
+4. **Set up the scheduler (20 minutes).** Install Anki if you don't have it: go to https://apps.ankiweb.net/, click the download for your operating system (Windows, Mac, or Linux), and run the installer like any other program; it's free.[^19] Open it. You'll see a single deck called *Default*. Click the gear icon to the right of it, choose *Options*, scroll to the bottom, and turn on **FSRS**. Leave *Desired retention* at 0.90. Save. Then, in the `electrons-study` folder the script made, open `cards.tsv` in your text editor. It already has four header lines; leave them alone. Below them, add ten cards from this chapter, one per line, in the form *front, tab, back, tab, ch00*. Write them in your own words following the four rules above: things you understand, one fact each, clozes where they fit, no lists. When you have ten, in Anki choose *File → Import*, pick `cards.tsv`, and confirm the preview shows ten notes with the fields in the right places. (If you use a different FSRS tool, import the file there instead; it is plain tab-separated text.)
 
-3. **Write the journal entry (10 minutes).** Open `journal.md`. The script already wrote today's heading and the four prompts. Fill them in. Two or three sentences each. Be specific in the second one.
+5. **Write the journal entry (10 minutes).** Open `journal.md`. The script already wrote today's heading and the four prompts. Fill them in. Two or three sentences each. Be specific in the second one.
 
-4. **The recall check (15 minutes).** Close this chapter. Close the browser tab or the file. Run:
+6. **The recall check (15 minutes).** Close this chapter. Close the browser tab or the file. Run:
 
    ```
    python3 recall_check.py
    ```
 
-   (It looks for the journal in `electrons-study` in your home directory; if you put the folder elsewhere, pass the journal's path as an argument.) Type everything you can remember from the chapter, one idea per line: claims, numbers, names, the shape of a figure, anything. Keep going past the point where it feels like you're done; that is where the interesting items are. When you genuinely run dry, type `done`. The script saves the list to your journal with a timestamp and a count. **Now** reopen the chapter and read it against your list. Under the entry, write what you missed and what you had wrong. The count is your baseline. It is probably lower than it felt like it would be. That is the chapter's point, measured.
+   (Same terminal, same `code` folder as step 3. The script looks for the journal in `electrons-study` in your home directory; if you put the folder elsewhere, pass the journal's path as an argument.) Type everything you can remember from the chapter, one idea per line: claims, numbers, names, the shape of a figure, anything. Keep going past the point where it feels like you're done; that is where the interesting items are. When you genuinely run dry, type `done`. The script saves the list to your journal with a timestamp and a count. **Now** reopen the chapter and read it against your list. Under the entry, write what you missed and what you had wrong. The count is your baseline. It is probably lower than it felt like it would be. That is the chapter's point, measured.
 
-5. **Set a time (5 minutes).** Pick a time of day for reviews and put it somewhere you will see it. Ten minutes. The scheduler will have nothing for you tomorrow except your ten cards; in a month it will have whatever the book has given you by then, spread thin.
+7. **Set a time (5 minutes).** Pick a time of day for reviews and put it somewhere you will see it. Ten minutes. The scheduler will have nothing for you tomorrow except your ten cards; in a month it will have whatever the book has given you by then, spread thin.
 
-**What success looks like.** `bench_check.py` reports `ok` for both tools. The `electrons-study` folder exists with three files. Anki shows ten new cards in a deck with FSRS on. `journal.md` has one filled-in entry and one recall check with a number next to it. You know your number.
+**What success looks like.** You have the book's folder on your machine. `bench_check.py` reports `ok` for both tools. The `electrons-study` folder exists with three files. Anki shows ten new cards in a deck with FSRS on. `journal.md` has one filled-in entry and one recall check with a number next to it. You know your number.
 
 **If it doesn't work.**
 
 - *`python3: command not found`* (or `python` opens the Microsoft Store on Windows): Python isn't installed or isn't on your path. Install from python.org and, on Windows, tick the "Add to PATH" box in the installer. Open a new terminal afterward; the old one won't see the change.
 - *`bench_check.py` says `OLD`*: you have a Python older than 3.12. Install the current one alongside it; on most systems the new one becomes `python3` automatically. Run `python3 --version` to check which one you're getting.
+- *`cd` says no such file or directory*: the path isn't quite right. Type `cd ` and drag the `code` folder from a file window into the terminal, then press Enter; or use `ls` (Mac/Linux) or `dir` (Windows) to see what's in the folder you're in and step down one level at a time.
+- *`git: command not found` on a Mac even after saying yes to the tools install*: the install runs in the background and can take several minutes; wait for its window to finish, then open a new terminal.
 - *Anki's import preview shows everything in one field*: the separator wasn't detected. In the import dialog, set the separator to *Tab* by hand. Make sure your editor is inserting real tab characters between fields and not spaces; some editors convert tabs to spaces by default.
 
 **Going further (optional, assistant allowed again).** Hand your ten cards to the assistant and ask it to find the ones that break the four rules. It will find some. Fix them yourself.
